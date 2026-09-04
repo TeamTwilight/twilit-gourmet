@@ -40,5 +40,14 @@ versionRange = "[1.3.2,)"
 ordering = "AFTER"
 side = "BOTH"
 
+#TODO add this once FML fixes the conflict screen warnings (https://github.com/neoforged/FancyModLoader/pull/438).
+# Its currently too confusing to include this when it doesnt show the reason
+#[[dependencies.twilitgourmet]]
+#modId = "twilightdelight"
+#type = "discouraged"
+#reason = "'Twilight Flavors and Delight' and 'Twilit Gourmet' should not be played together. Both mods have overlapping content that might make the other's unobtainable. Compatibility betwen the mods will not be considered."
+#ordering = "NONE"
+#side = "BOTH"
+
 [[mixins]]
 config = "twilitgourmet.mixins.json"
