@@ -1,7 +1,28 @@
 {
   "parent": "twilitgourmet:root",
   "criteria": {
-    "collect_syrup": {
+    "collect_syrup_empty_cauldron": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:cauldron"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:glass_bottle"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    },
+    "collect_syrup_syrup_cauldron": {
       "conditions": {
         "location": [
           {
@@ -40,7 +61,8 @@
   },
   "requirements": [
     [
-      "collect_syrup"
+      "collect_syrup_syrup_cauldron",
+      "collect_syrup_empty_cauldron"
     ]
   ],
   "sends_telemetry_event": true

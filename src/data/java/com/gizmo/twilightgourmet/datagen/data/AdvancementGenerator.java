@@ -16,6 +16,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemEntityPropertyCondition;
 import net.neoforged.neoforge.common.data.AdvancementProvider;
@@ -58,7 +59,9 @@ public class AdvancementGenerator extends AdvancementProvider {
 							Component.translatable("advancement.twilitgourmet.collect_syrup.title"),
 							Component.translatable("advancement.twilitgourmet.collect_syrup.desc"),
 							null, AdvancementType.TASK, true, true, false)
-					.addCriterion("collect_syrup", ItemUsedOnLocationTrigger.TriggerInstance.itemUsedOnBlock(LocationPredicate.Builder.location().setBlock(BlockPredicate.Builder.block().of(GourmetBlocks.SYRUP_CAULDRON.get())), ItemPredicate.Builder.item().of(Items.GLASS_BOTTLE)))
+					.addCriterion("collect_syrup_syrup_cauldron", ItemUsedOnLocationTrigger.TriggerInstance.itemUsedOnBlock(LocationPredicate.Builder.location().setBlock(BlockPredicate.Builder.block().of(GourmetBlocks.SYRUP_CAULDRON.get())), ItemPredicate.Builder.item().of(Items.GLASS_BOTTLE)))
+					.addCriterion("collect_syrup_empty_cauldron", ItemUsedOnLocationTrigger.TriggerInstance.itemUsedOnBlock(LocationPredicate.Builder.location().setBlock(BlockPredicate.Builder.block().of(Blocks.CAULDRON)), ItemPredicate.Builder.item().of(Items.GLASS_BOTTLE)))
+					.requirements(AdvancementRequirements.Strategy.OR)
 					.save(consumer, "twilitgourmet:collect_syrup");
 
 			Advancement.Builder.advancement().parent(syrup).display(GourmetItems.PANCAKE_STACK,
