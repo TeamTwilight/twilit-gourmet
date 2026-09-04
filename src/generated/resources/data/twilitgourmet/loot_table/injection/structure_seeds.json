@@ -5,6 +5,10 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
+          "type": "minecraft:empty",
+          "weight": 6
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -73,7 +77,11 @@
           "weight": 2
         }
       ],
-      "rolls": 1.0
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 3.0,
+        "min": 1.0
+      }
     }
   ],
   "random_sequence": "twilitgourmet:injection/structure_seeds"

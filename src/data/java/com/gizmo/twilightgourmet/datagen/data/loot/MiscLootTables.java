@@ -38,6 +38,8 @@ public record MiscLootTables(HolderLookup.Provider registries) implements LootTa
 				.when(BonusLevelTableCondition.bonusLevelFlatChance(this.registries.holderOrThrow(Enchantments.FORTUNE), 0.005F, 0.0055555557F, 0.00625F, 0.008333334F, 0.025F))));
 
 		output.accept(GourmetLootTables.SEED_INJECTION, LootTable.lootTable().withPool(LootPool.lootPool()
+				.setRolls(UniformGenerator.between(1.0F, 3.0F))
+				.add(EmptyLootItem.emptyItem().setWeight(6))
 				.add(LootItem.lootTableItem(ModItems.CABBAGE_SEEDS.get()).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 4.0F))).setWeight(3))
 				.add(LootItem.lootTableItem(ModItems.TOMATO_SEEDS.get()).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F))).setWeight(2))
 				.add(LootItem.lootTableItem(ModItems.ROTTEN_TOMATO.get()))

@@ -9,7 +9,13 @@
     "twilitgourmet:add_giant_apple_to_leaves",
     "twilitgourmet:add_ice_knives_to_aurora_palace",
     "twilitgourmet:add_knightmetal_knives_to_stronghold",
-    "twilitgourmet:add_seeds_to_loot",
+    "twilitgourmet:add_seeds_to_druid_hut",
+    "twilitgourmet:add_seeds_to_hedge_maze",
+    "twilitgourmet:add_seeds_to_trees",
+    "twilitgourmet:add_seeds_to_fallen_trunk",
+    "twilitgourmet:add_seeds_to_small_hill",
+    "twilitgourmet:add_seeds_to_medium_hill",
+    "twilitgourmet:add_seeds_to_large_hill",
     "twilitgourmet:add_seeds_to_troll_caves"
   ],
   "replace": false

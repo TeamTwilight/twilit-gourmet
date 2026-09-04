@@ -52,7 +52,13 @@ public class LootModifierGenerator extends GlobalLootModifierProvider {
 		this.add("add_ice_knives_to_aurora_palace", this.addNewLootPool(TFLootTables.AURORA_ROOM, GourmetLootTables.AURORA_PALACE_INJECTION));
 		this.add("add_knightmetal_knives_to_stronghold", this.addNewLootPool(TFLootTables.STRONGHOLD_CACHE, GourmetLootTables.STRONGHOLD_INJECTION));
 
-		this.add("add_seeds_to_loot", this.addNewLootPool(TFLootTables.USELESS_LOOT, GourmetLootTables.SEED_INJECTION));
+		this.add("add_seeds_to_druid_hut", this.addNewLootPool(TFLootTables.BASEMENT, GourmetLootTables.SEED_INJECTION));
+		this.add("add_seeds_to_hedge_maze", this.addNewLootPool(TFLootTables.HEDGE_MAZE, GourmetLootTables.SEED_INJECTION));
+		this.add("add_seeds_to_trees", this.addNewLootPool(TFLootTables.TREE_CACHE, GourmetLootTables.SEED_INJECTION));
+		this.add("add_seeds_to_fallen_trunk", this.addNewLootPool(TFLootTables.FALLEN_TRUNK_LOOT, GourmetLootTables.SEED_INJECTION));
+		this.add("add_seeds_to_small_hill", this.addNewLootPool(TFLootTables.SMALL_HOLLOW_HILL, GourmetLootTables.SEED_INJECTION));
+		this.add("add_seeds_to_medium_hill", this.addNewLootPool(TFLootTables.MEDIUM_HOLLOW_HILL, GourmetLootTables.SEED_INJECTION));
+		this.add("add_seeds_to_large_hill", this.addNewLootPool(TFLootTables.LARGE_HOLLOW_HILL, GourmetLootTables.SEED_INJECTION));
 		this.add("add_seeds_to_troll_caves", this.addNewLootPool(TFLootTables.TROLL_GARDEN, GourmetLootTables.SEED_INJECTION));
 	}
 

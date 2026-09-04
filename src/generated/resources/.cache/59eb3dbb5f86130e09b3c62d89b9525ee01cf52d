@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-03T06:51:17.274317388	Loot Tables
+// 1.21.1	2026-09-04T09:22:21.027510268	Loot Tables
 18e7d4aeed1fd0f4e9944d011268c8f7cda81a7c data/twilightforest/loot_table/entities/boar.json
 cb4abd984e93c771cdc4f912c099bdfa0c4a3e08 data/twilightforest/loot_table/entities/helmet_crab.json
 0f31a7bb2069189939b4763b8004d51a8ad0dfa7 data/twilitgourmet/loot_table/blocks/breadcrumbs.json
@@ -23,4 +23,4 @@ cf446eabaf7d3db8e3bd3a736a556f48faa19ca6 data/twilitgourmet/loot_table/blocks/ti
 b6a32eae63f5f10443475c1348d97ce89ec34554 data/twilitgourmet/loot_table/injection/aurora_palace.json
 9563421c2c281f9de35e6d350c25a891130ac891 data/twilitgourmet/loot_table/injection/giant_apple.json
 5ac661035d0c09630b8ff7d69c9da759ac72112e data/twilitgourmet/loot_table/injection/stonghold.json
-4b38be088f592a9ad5766112d3928b7c469f5846 data/twilitgourmet/loot_table/injection/structure_seeds.json
+20ac66dcf00cb0fa0542dfa0e9d205cef98906e8 data/twilitgourmet/loot_table/injection/structure_seeds.json
